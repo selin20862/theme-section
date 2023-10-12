@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'made_outer_sanslight';
+    src: url('../fonts/made_outer_sans_light_personal_use-webfont.woff2') format('woff2'),
+         url('../fonts/made_outer_sans_light_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'made_outer_sansthin';
+    src: url('../fonts/made_outer_sans_thin_personal_use-webfont.woff2') format('woff2'),
+         url('../fonts/made_outer_sans_thin_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'madre_roseregular';
+    src: url('../fonts/madreroseregular-4bqrw-webfont.woff2') format('woff2'),
+         url('../fonts/madreroseregular-4bqrw-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* fonts */
+$font-madre-rose: 'madre_roseregular';
+$font-made-outer-sans-light: 'made_outer_sanslight';
+$font-made-outer-sans-thin: 'made_outer_sansthin';
+
+
+/* font sizes */
+
+$font-size-61xl: 80px;
+$font-size-21xl: 40px;
+
+/* Colors */
+
+$white: #fff;
+$noir: #1d1d1d;
+$beige: #f3ece0;
+$accent: #3653ff;

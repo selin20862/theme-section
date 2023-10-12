@@ -22,10 +22,10 @@
 			}
 			
 		],
-		"liveSassCompile.settings.excludeList": [ 
-			"**/scss/bootstrap/**",
-			".vscode/**" 
-		]
+		// "liveSassCompile.settings.excludeList": [ 
+		// 	"**/scss/bootstrap/**",
+		// 	".vscode/**" 
+		// ]
 		
 	}
 }
