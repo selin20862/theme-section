@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 header{   
+    position: absolute;
+    z-index: 200;
   nav{
     .menu-link{
     text-transform: uppercase;
@@ -80,15 +82,9 @@ div{
 
 }
 
-// img{
-//     max-width: 200px;
-// }
-
-* {
-    box-sizing: border-box;
+.travaux {
+    background-color: $noir;
 }
-
-body { background-color: $noir;}
 
 .sectiontravaux{
     padding: 0;
