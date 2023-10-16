@@ -19,14 +19,68 @@
 /* fonts */
 /* font sizes */
 /* Colors */
-img {
-  max-width: 200px;
+* {
+  box-sizing: border-box;
 }
 
-h2 {
-  font-family: "made_outer_sanslight";
+.sectiontravaux {
+  width: 100%;
+  background-color: #1d1d1d;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-
-h1 {
+.sectiontravaux .divtravaux {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sectiontravaux .divtravaux article {
+  width: 15vw;
+  position: relative;
+  height: 40vh;
+}
+.sectiontravaux .divtravaux article img {
+  max-height: 40vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  filter: sepia(100%) hue-rotate(240deg);
+}
+.sectiontravaux .divtravaux article::after {
+  content: "";
+  display: block;
+  background-color: #3653ff;
+  mix-blend-mode: color;
+  height: 40vh;
+  width: 15vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.sectiontravaux .divlooptrav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectiontravaux .divlooptrav h1 {
+  color: #fff;
   font-family: "madre_roseregular";
+  font-size: 40px;
+}
+.sectiontravaux .divtravaux-2 article {
+  display: flex;
+  align-items: flex-end;
+}
+
+.masection {
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
