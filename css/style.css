@@ -25,14 +25,10 @@ body {
   margin: 0;
 }
 
+/*MENU*/
 header {
   position: absolute;
   z-index: 200;
-}
-header nav .menu-link {
-  text-transform: uppercase;
-  font-weight: 300;
-  transform: rotate(-90deg);
 }
 header nav .menu {
   background-color: #1d1d1d;
@@ -43,6 +39,11 @@ header nav .menu {
   display: flex;
   align-items: center;
 }
+header nav .menu .menu-link {
+  text-transform: uppercase;
+  font-weight: 300;
+  transform: rotate(-90deg);
+}
 header nav .menu h3 {
   font-family: "made_outer_sanslight";
 }
@@ -50,21 +51,29 @@ header nav .menu a {
   text-decoration: none;
   color: #fff;
 }
+header nav .menu .mail {
+  position: relative;
+  left: 84vw;
+  bottom: 19vw;
+}
+header nav .menu .mail img {
+  height: 4.75vw;
+  width: 11.75vw;
+}
 header nav .menu .menu-contain {
-  padding: 10px;
   display: flex;
   width: 100%;
-  justify-content: space-between;
   flex-direction: column;
-}
-header nav .menu .menu-contain div img {
-  height: 4.75vw;
-  position: sticky;
-  left: 192vh;
+  row-gap: 1vh;
+  align-items: center;
 }
 header nav .menu .menu-contain ul {
   list-style: none;
   padding: 0;
+  width: 100%;
+  list-style: none;
+  padding-top: 11vw;
+  width: 100%;
 }
 header nav .menu .menu-contain ul li a {
   font-family: "madre_roseregular";
@@ -85,7 +94,49 @@ header nav .menu .menu-contain div .loop {
   font-size: 40px;
 }
 
+<<<<<<< HEAD
 .fond-noir {
+=======
+.info {
+  background-color: #f3ece0;
+}
+.info a {
+  text-decoration: none;
+}
+.info .infor {
+  font-family: "madre_roseregular";
+  text-align: end;
+}
+.info .infor h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 130px;
+}
+.info .exp {
+  padding-top: 20vh;
+}
+.info .exp h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "made_outer_sanslight";
+  text-align: left;
+}
+.info .exp p {
+  font-family: "made_outer_sansthin";
+  text-align: left;
+}
+.info .loopinscri {
+  position: relative;
+  top: 15vh;
+}
+.info .loopinscri h3 {
+  font-family: "madre_roseregular";
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.travaux {
+>>>>>>> doha
   background-color: #1d1d1d;
 }
 

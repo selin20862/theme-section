@@ -2,15 +2,12 @@ body {
    box-sizing: border-box;
     margin: 0;
 }
+/*MENU*/
 header{   
     position: absolute;
     z-index: 200;
   nav{
-    .menu-link{
-    text-transform: uppercase;
-    font-weight: 300;
-    transform: rotate(-90deg)
-   }
+ 
   
 .menu {
      
@@ -21,7 +18,12 @@ header{
     position: fixed;
     display: flex;
     align-items: center;
-    
+   
+       .menu-link{
+    text-transform: uppercase;
+    font-weight: 300;
+    transform: rotate(-90deg)
+   }
 
 h3{
  font-family: $font-made-outer-sans-light;   
@@ -30,25 +32,33 @@ h3{
         text-decoration: none; 
         color: $white;
     }
-    .menu-contain{
-    //    visibility: hidden;
-        padding: 10px;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-    
-    
-div{
-
+    .mail{
+        position: relative;
+        left: 84vw;
+        bottom: 19vw;
    img{
     height: 4.75vw;
-    position: sticky;
-    left: 192vh;
+    width: 11.75vw;
+   
+   
    }}
+    .menu-contain{
+       
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      row-gap: 1vh; 
+      align-items: center;
+    
+   
+
     ul {
         list-style: none;
         padding: 0;
+        width: 100%;
+        list-style: none;
+        padding-top: 11vw;
+        width: 100%;
         li {
             
             a {
@@ -81,6 +91,51 @@ div{
  }
 
 }
+.info{
+    background-color: $beige; 
+    a{
+            text-decoration: none; }  
+    .infor{
+        font-family: $font-madre-rose;
+        text-align: end;
+        
+       
+           
+            h1{
+                font-size: $font-size-80;
+        text-transform: uppercase;
+        line-height: 130px;
+
+    }
+          
+        }
+        .exp{
+            padding-top: 20vh;
+            h2{
+                text-transform: uppercase;
+font-weight: 300;
+font-family: $font-made-outer-sans-light;
+
+text-align: left;
+            }
+            p{
+                font-family: $font-made-outer-sans-thin;
+                text-align: left;
+               
+            }
+        }
+        .loopinscri{
+           position: relative;
+           top:15vh;
+            h3{
+                font-family: $font-madre-rose;
+                text-transform: uppercase;
+                color: $noir;
+        }
+   
+       
+}}
+
 
 .fond-noir {
     background-color: $noir;
