@@ -94,6 +94,45 @@ header nav .menu .menu-contain div .loop {
   font-size: 40px;
 }
 
+/*FIN MENU*/
+.info {
+  background-color: #f3ece0;
+}
+.info a {
+  text-decoration: none;
+}
+.info .infor {
+  font-family: "madre_roseregular";
+  text-align: end;
+}
+.info .infor h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 130px;
+}
+.info .exp {
+  padding-top: 20vh;
+}
+.info .exp h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "made_outer_sanslight";
+  text-align: left;
+}
+.info .exp p {
+  font-family: "made_outer_sansthin";
+  text-align: left;
+}
+.info .loopinscri {
+  position: relative;
+  top: 15vh;
+}
+.info .loopinscri h3 {
+  font-family: "madre_roseregular";
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
 .fond-noir {
   background-color: #1d1d1d;
 }
