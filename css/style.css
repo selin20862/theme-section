@@ -85,8 +85,12 @@ header nav .menu .menu-contain div .loop {
   font-size: 40px;
 }
 
-.travaux {
+.fond-noir {
   background-color: #1d1d1d;
+}
+
+.fond-beige {
+  background-color: #f3ece0;
 }
 
 .sectiontravaux {
@@ -103,23 +107,21 @@ header nav .menu .menu-contain div .loop {
   top: 0;
   bottom: 0;
   z-index: 3;
-  width: 350px; /* Ajustez la largeur du dégradé selon vos besoins */
+  width: 300px; /* Ajustez la largeur du dégradé selon vos besoins */
 }
 .sectiontravaux::after {
   right: 0;
-  background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  background: linear-gradient(to left, #1d1d1d, rgba(0, 0, 0, 0));
 }
 .sectiontravaux::before {
   left: 0;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
 }
 .sectiontravaux .svg-souris {
   position: fixed;
   z-index: 4;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 20px; /* Adjust the margin as needed */
-  margin-right: 20px; /* Adjust the margin as needed */
+  bottom: 20px;
+  right: 20px;
 }
 .sectiontravaux h1 {
   position: fixed;
@@ -130,6 +132,7 @@ header nav .menu .menu-contain div .loop {
   color: #fff;
   font-family: "madre_roseregular";
   font-size: 2vw;
+  white-space: nowrap;
 }
 .sectiontravaux article {
   width: 15vw;
@@ -157,6 +160,7 @@ header nav .menu .menu-contain div .loop {
   width: 100%;
   height: 100%;
   z-index: 1; /* Make sure the overlay is behind the image */
+  transition: 0.5s ease; /* Ajoutez une transition pour une animation */
 }
 .sectiontravaux article .image-travaux img {
   width: 100%;
@@ -168,4 +172,105 @@ header nav .menu .menu-contain div .loop {
   display: block; /* Removes any extra space below the image */
   z-index: 2; /* Ensures the image is on top of the overlay */
   filter: grayscale(100%);
+  transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+}
+.sectiontravaux article .image-travaux:hover::before {
+  background: transparent; /* Supprime la couleur de superposition au survol */
+}
+.sectiontravaux article .image-travaux:hover img {
+  filter: grayscale(0%); /* Supprime l'effet de gris au survol */
+}
+
+.sectionprojets {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sectionprojets::after, .sectionprojets::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 300px; /* Ajustez la largeur du dégradé selon vos besoins */
+}
+.sectionprojets::after {
+  right: 0;
+  background: linear-gradient(to left, #f3ece0, rgba(0, 0, 0, 0));
+}
+.sectionprojets::before {
+  left: 0;
+  background: linear-gradient(to right, #f3ece0, rgba(0, 0, 0, 0));
+}
+.sectionprojets .svg-souris {
+  position: fixed;
+  z-index: 4;
+  bottom: 20px;
+  right: 20px;
+}
+.sectionprojets .svg-filtre {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5; /* Pour s'assurer que le SVG est au-dessus du contenu */
+}
+.sectionprojets h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: #1d1d1d;
+  font-family: "madre_roseregular";
+  font-size: 2vw;
+  white-space: nowrap;
+}
+.sectionprojets article {
+  width: 15vw;
+  height: 40vh;
+  margin-right: 10vw;
+  position: relative;
+}
+.sectionprojets article:nth-child(even) {
+  /* Votre style pour les articles pairs ici */
+  display: flex;
+  align-items: flex-end;
+}
+.sectionprojets article .image-travaux {
+  width: 100%;
+  position: relative;
+  display: inline-block; /* Ensures that the container size matches the image size */
+}
+.sectionprojets article .image-travaux::before {
+  content: "";
+  background: #3653ff; /* Your overlay color */
+  mix-blend-mode: color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Make sure the overlay is behind the image */
+  transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+}
+.sectionprojets article .image-travaux img {
+  width: 100%;
+  max-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block; /* Removes any extra space below the image */
+  z-index: 2; /* Ensures the image is on top of the overlay */
+  filter: grayscale(100%);
+  transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+}
+.sectionprojets article .image-travaux:hover::before {
+  background: transparent; /* Supprime la couleur de superposition au survol */
+}
+.sectionprojets article .image-travaux:hover img {
+  filter: grayscale(0%); /* Supprime l'effet de gris au survol */
 }/*# sourceMappingURL=style.css.map */
