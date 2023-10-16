@@ -228,11 +228,44 @@ div{
         right: 20px;
     }
 
-    .svg-filtre {
+    .svg-filtre-open, .svg-filtre-close {
         position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 5; /* Pour s'assurer que le SVG est au-dessus du contenu */
+  z-index: 7; /* Pour s'assurer que le SVG est au-dessus du contenu */
+    }
+
+    .filtre {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 10vh;
+        width: 100%;
+        background-color: $accent;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 6;
+        padding-right: 5vw;
+
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            li{
+                padding-right: 2vw;
+                a{
+                    font-size: 1vw;
+                    font-family: $font-made-outer-sans-light;
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
     }
 
     h1 {
@@ -298,6 +331,72 @@ div{
         
             &:hover img {
                 filter: grayscale(0%); /* Supprime l'effet de gris au survol */
+            }
+        }
+    }
+}
+
+.section-detail{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightblue;
+
+    article{
+        height: 100vh;
+        width: 50vw;
+        background-color: lightcoral;
+
+        &:first-child{
+            background-color: $beige;
+            display: flex;
+            align-items: flex-end;
+            .div-detail{
+                background-color: $white;
+                height: 50vh;
+                width: 100%;
+                padding: 3vw 3vw 1.5vw 3vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .last{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    a{
+                        color: $noir;
+                        font-family: $font-made-outer-sans-light;
+                        font-size: 1.2vw;
+                        text-decoration: none;
+                    }
+                }
+               
+
+                h1{
+                    font-family: $font-made-outer-sans-light;
+                    font-size: 2vw; 
+                    color: $accent;
+                }
+
+                p{
+                    font-family: $font-made-outer-sans-thin;
+                    font-size: 1vw; 
+                    color: $noir;
+                    width: 50ch;
+                }
+            }
+        }
+
+        &:last-child{
+            background-color: lavender;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center
             }
         }
     }
