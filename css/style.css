@@ -95,6 +95,7 @@ header nav .menu .menu-contain div .loop {
 }
 
 /*FIN MENU*/
+/*INFORMATIONS*/
 .info {
   background-color: #f3ece0;
 }
@@ -132,7 +133,11 @@ header nav .menu .menu-contain div .loop {
   text-transform: uppercase;
   color: #1d1d1d;
 }
+.info .dropdown .dropdown-conte {
+  display: none;
+}
 
+/*FIN INFORMATION*/
 .fond-noir {
   background-color: #1d1d1d;
 }
