@@ -153,7 +153,8 @@ text-align: left;
   
     h3 {
       display: inline-block; 
-      animation: scrolling-left 10s linear infinite; 
+      animation: scrolling-left 5s linear infinite; 
+   
       &:hover {
         animation-play-state: paused; 
       } 
@@ -162,12 +163,10 @@ text-align: left;
   }
   
   @keyframes scrolling-left {
-    0% {
-      transform: translateX(100%); 
-    }
-    100% {
-      transform: translateX(-100%); 
-    }
+    0% {transform: translateX(100%);
+        -webkit-transform: translateX(100%);}
+      100% {transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);}
   }
 }
 // fin animation text
