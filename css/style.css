@@ -136,6 +136,26 @@ header nav .menu .menu-contain div .loop {
 .info .dropdown .dropdown-conte {
   display: none;
 }
+.info .loopinscri {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.info .loopinscri h3 {
+  display: inline-block;
+  animation: scrolling-left 10s linear infinite;
+}
+.info .loopinscri h3:hover {
+  animation-play-state: paused;
+}
+@keyframes scrolling-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /*FIN INFORMATION*/
 .fond-noir {
