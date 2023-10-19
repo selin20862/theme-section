@@ -1,3 +1,7 @@
+
+
+
+// info
 $(document).ready(function() {
     $(".dropdown-link").click(function(event) {
         event.preventDefault(); // Empêche le lien de naviguer vers une autre page
