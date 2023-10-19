@@ -323,13 +323,18 @@ text-align: left;
 
     .svg-filtre-open, .svg-filtre-close {
         position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   z-index: 7; /* Pour s'assurer que le SVG est au-dessus du contenu */
+    }
+
+    .svg-filtre-close {
+        display: none;
     }
 
     .filtre {
         display: flex;
+        opacity: 0;
         flex-direction: row;
         justify-content: flex-end;
         height: 10vh;
