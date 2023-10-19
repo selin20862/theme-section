@@ -137,25 +137,28 @@ header nav .menu .menu-contain div .loop {
   display: none;
 }
 .info .loopinscri {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
   overflow: hidden;
-  position: relative;
+}
+.info .loopinscri div {
+  padding-right: 0.5ch;
+  white-space: nowrap;
 }
 .info .loopinscri h3 {
   display: inline-block;
-  animation: scrolling-left 5s linear infinite;
+  animation: scrolling-left 10s linear infinite;
 }
 .info .loopinscri h3:hover {
   animation-play-state: paused;
 }
-@keyframes scrolling-left {
-  0% {
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  100% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+  to {
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
