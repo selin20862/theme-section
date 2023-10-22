@@ -45,3 +45,21 @@ $(document).ready(function() {
         filtre.hide();
     }
 });
+// fin info
+
+// menubar
+$(document).ready(function() {
+    // Ouvre la barre de navigation
+    function openNav() {
+      $(".menu-contain").css("width", "100%");
+    }
+  
+    // Ferme la barre de navigation
+    function closeNav() {
+      $(".menu-contain").css("width", "0");
+    }
+  
+    // Attachez ces fonctions à des éléments ou des événements appropriés, par exemple :
+    $(".menu-link a").click(openNav);
+    $("#closeButton").click(closeNav);
+  });
