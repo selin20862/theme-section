@@ -56,47 +56,21 @@ $(document).ready(function() {
             'bottom': '0',
             'width': '50%'
         });
-
+    
         $('.div-detail a:first-child').on('click', function(e) {
             e.preventDefault();
-            $(this).css({
-                'display': 'none'
-            });
-    
-            $('.div-detail a:nth-child(2)').css({
-                'display': 'flex'
-            });
-    
-            $('.div-detail h1, .div-detail p').css({
-                'display': 'none'
-            });
-            
-    
-    
-            $('.div-detail').css({
-                'width': '30%',
-                'height': '30%'
-            });
+            $(this).fadeOut();
+            $('.div-detail a:nth-child(2)').fadeIn().css('display', 'flex');
+            $('.div-detail h1, .div-detail p').fadeOut();
+            $('.div-detail').animate({ width: '30%', height: '30%' });
         });
     
         $('.div-detail a:nth-child(2)').on('click', function(e) {
             e.preventDefault();
-            $(this).css({
-                'display': 'none'
-            });
-    
-            $('.div-detail a:first-child').css({
-                'display': 'flex'
-            });
-    
-            $('.div-detail h1, .div-detail p').css({
-                'display': 'flex'
-            });
-    
-            $('.div-detail').css({
-                'width': '50%',
-                'height': '60%'
-            });
+            $(this).fadeOut();
+            $('.div-detail a:first-child').fadeIn();
+            $('.div-detail h1, .div-detail p').fadeIn();
+            $('.div-detail').animate({ width: '50%', height: '60%' });
         });
 
     } else if (imageWidth < 0.5 * containerWidth) {

@@ -175,6 +175,9 @@ text-align: left;
 
 /*FIN INFORMATION*/
 
+
+@media (min-width: 992px) {
+  
 .fond-noir {
     background-color: $noir;
 }
@@ -491,3 +494,4 @@ text-align: left;
   
 }
 // fin detail projet
+}
