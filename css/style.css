@@ -389,55 +389,39 @@ header nav .menu .menu-contain div .loop {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: lightblue;
-}
-.section-detail article {
-  height: 100vh;
-  width: 50vw;
-  background-color: lightcoral;
-}
-.section-detail article:first-child {
-  background-color: #f3ece0;
-  display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #f3ece0;
 }
-.section-detail article:first-child .div-detail {
+.section-detail .div-detail {
   background-color: #fff;
-  height: 50vh;
+  height: 60%;
   width: 100%;
-  padding: 3vw 3vw 1.5vw 3vw;
+  padding: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.section-detail article:first-child .div-detail .last {
+.section-detail .div-detail a:first-child {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.section-detail article:first-child .div-detail .last a {
-  color: #1d1d1d;
-  font-family: "made_outer_sanslight";
-  font-size: 1.2vw;
-  text-decoration: none;
+.section-detail .div-detail a:nth-child(2) {
+  display: none;
+  justify-content: flex-end;
 }
-.section-detail article:first-child .div-detail h1 {
+.section-detail .div-detail h1 {
   font-family: "made_outer_sanslight";
   font-size: 2vw;
   color: #3653ff;
 }
-.section-detail article:first-child .div-detail p {
+.section-detail .div-detail p {
   font-family: "made_outer_sansthin";
   font-size: 1vw;
   color: #1d1d1d;
   width: 50ch;
 }
-.section-detail article:last-child {
-  background-color: lavender;
-}
-.section-detail article:last-child img {
-  width: 100%;
+.section-detail img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;

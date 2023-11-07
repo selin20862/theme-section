@@ -183,6 +183,7 @@ text-align: left;
     background-color: $beige;
 }
 
+// projets accueil
 .sectiontravaux{
     padding: 0;
     height: 100vh;
@@ -285,7 +286,9 @@ text-align: left;
         }
     }
 }
+// fin projets accueil
 
+// projets
 .sectionprojets{
     padding: 0;
     height: 100vh;
@@ -433,45 +436,38 @@ text-align: left;
         }
     }
 }
+// fin projets
 
+// detail projet
 .section-detail{
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: lightblue;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: $beige;
+  .div-detail{
 
-    article{
-        height: 100vh;
-        width: 50vw;
-        background-color: lightcoral;
+                a:first-child{
+                    display: flex;
+                    justify-content: flex-end;
+                }
 
-        &:first-child{
-            background-color: $beige;
-            display: flex;
-            align-items: flex-end;
-            .div-detail{
+                a:nth-child(2){
+                    display: none;
+                    justify-content: flex-end;
+                }
+
+
                 background-color: $white;
-                height: 50vh;
+                height: 60%;
                 width: 100%;
-                padding: 3vw 3vw 1.5vw 3vw;
+                padding: 3vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
-                .last{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    a{
-                        color: $noir;
-                        font-family: $font-made-outer-sans-light;
-                        font-size: 1.2vw;
-                        text-decoration: none;
-                    }
-                }
-               
 
                 h1{
                     font-family: $font-made-outer-sans-light;
@@ -486,16 +482,12 @@ text-align: left;
                     width: 50ch;
                 }
             }
-        }
-
-        &:last-child{
-            background-color: lavender;
+  
             img{
-                width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center
             }
-        }
-    }
+  
 }
+// fin detail projet
