@@ -21,9 +21,10 @@ header{
    
   
        .menu-link{
+        color: $white;
     text-transform: uppercase;
     font-weight: 300;
-    transform: rotate(-90deg)
+    
    }
 
 h3{
@@ -44,17 +45,13 @@ h3{
    
    }}
     .menu-contain{
-       
         height: 100%;
-        width: 0;
-           
+        width: 100%; // Ajout de cette ligne pour que le menu prenne la largeur de la page
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-      
-    
-   
+    }
 
     ul {
         list-style: none;
@@ -64,14 +61,12 @@ h3{
         padding-top: 11vw;
         width: 100%;
         li {
-            
             a {
                 font-family: $font-madre-rose;
                 text-transform: uppercase;
                 display: block;
                 text-align: left;
                 font-size: $font-size-96;
-                
                 padding: 10px;
                 &:hover {
                     background-color: #555;
@@ -79,22 +74,14 @@ h3{
             }
         }
     }
-div{
-    .loop{
-        color: $white;
-        text-transform: uppercase;
-        font-family:$font-madre-rose;
-            text-align: left;
-            font-size: $font-size-40;
-    }
-}
+
 }
 
 }  
 
  }
 
-}
+
 /*FIN MENU*/
 /*INFORMATIONS*/
 .info{
@@ -103,12 +90,12 @@ div{
             text-decoration: none; }  
     .infor{
         font-family: $font-madre-rose;
-        text-align: end;
+        text-align: center;
         
        
            
             h1{
-                font-size: $font-size-80;
+                font-size: $font-size-40;
         text-transform: uppercase;
         line-height: 130px;
 
@@ -133,11 +120,17 @@ text-align: left;
         .loopinscri{
            position: relative;
            top:15vh;
+           display: flex;
+           align-items: center;
+       } 
+       a{
+        display: flex;
             h3{
                 font-family: $font-madre-rose;
                 text-transform: uppercase;
                 color: $noir;
         }
+       }
    
        
 }
@@ -149,39 +142,39 @@ text-align: left;
 }
 }
 // animation text
-
-.loopinscri {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    overflow: hidden;
-
-
- div {
-    padding-right: .5ch;
-    white-space: nowrap
-}
-  
-    h3 {
-      display: inline-block; 
-      animation: scrolling-left 10s linear infinite; 
+.loop-effect {
+    animation: loop 5s linear infinite;
    
-      &:hover {
-        animation-play-state: paused; 
-      } 
-    }
+    
+}
+
+.loop-effect2 {
+    animation: loop2 5s linear infinite;
+    
    
-  }
-  
-  @keyframes animate_text {
-    from {
-      transform: translate3d(0, 0, 0);
+    
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
     }
-    to {
-      transform: translate3d(-100%, 0, 0);
+    100% {
+        transform: translateX(-100%);
     }
 }
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
+
+
 
 // fin animation text
 

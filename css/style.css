@@ -39,9 +39,9 @@ header nav .menu {
   align-items: center;
 }
 header nav .menu .menu-link {
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  transform: rotate(-90deg);
 }
 header nav .menu h3 {
   font-family: "made_outer_sanslight";
@@ -61,13 +61,13 @@ header nav .menu .mail img {
 }
 header nav .menu .menu-contain {
   height: 100%;
-  width: 0;
+  width: 100%;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
-header nav .menu .menu-contain ul {
+header nav .menu ul {
   list-style: none;
   padding: 0;
   width: 100%;
@@ -75,7 +75,7 @@ header nav .menu .menu-contain ul {
   padding-top: 11vw;
   width: 100%;
 }
-header nav .menu .menu-contain ul li a {
+header nav .menu ul li a {
   font-family: "madre_roseregular";
   text-transform: uppercase;
   display: block;
@@ -83,15 +83,8 @@ header nav .menu .menu-contain ul li a {
   font-size: 96px;
   padding: 10px;
 }
-header nav .menu .menu-contain ul li a:hover {
+header nav .menu ul li a:hover {
   background-color: #555;
-}
-header nav .menu .menu-contain div .loop {
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "madre_roseregular";
-  text-align: left;
-  font-size: 40px;
 }
 
 /*FIN MENU*/
@@ -104,10 +97,10 @@ header nav .menu .menu-contain div .loop {
 }
 .info .infor {
   font-family: "madre_roseregular";
-  text-align: end;
+  text-align: center;
 }
 .info .infor h1 {
-  font-size: 80px;
+  font-size: 40px;
   text-transform: uppercase;
   line-height: 130px;
 }
@@ -127,41 +120,46 @@ header nav .menu .menu-contain div .loop {
 .info .loopinscri {
   position: relative;
   top: 15vh;
+  display: flex;
+  align-items: center;
 }
-.info .loopinscri h3 {
+.info a {
+  display: flex;
+}
+.info a h3 {
   font-family: "madre_roseregular";
   text-transform: uppercase;
   color: #1d1d1d;
 }
-.info .dropdown .dropdown-conte {
+
+.dropdown .dropdown-conte {
   display: none;
 }
-.info .loopinscri {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  overflow: hidden;
-}
-.info .loopinscri div {
-  padding-right: 0.5ch;
-  white-space: nowrap;
-}
-.info .loopinscri h3 {
-  display: inline-block;
-  animation: scrolling-left 10s linear infinite;
-}
-.info .loopinscri h3:hover {
-  animation-play-state: paused;
-}
-@keyframes animate_text {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-100%, 0, 0);
-  }
+
+.loop-effect {
+  animation: loop 5s linear infinite;
 }
 
+.loop-effect2 {
+  animation: loop2 5s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /*FIN INFORMATION*/
 .fond-noir {
   background-color: #1d1d1d;

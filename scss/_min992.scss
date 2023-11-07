@@ -1,0 +1,249 @@
+@media (min-width: 992px) { 
+   
+
+header{   
+    position: absolute;
+    z-index: 200;
+  nav{
+ 
+  
+.menu {
+     
+    background-color: $noir;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+   
+  
+       .menu-link{
+        color: $white;
+    text-transform: uppercase;
+    font-weight: 300;
+    transform: rotate(-90deg)
+   }
+
+h3{
+ font-family: $font-made-outer-sans-light;   
+}
+    a{
+        text-decoration: none; 
+        color: $white;
+    }
+    .mail{
+        position: relative;
+        left: 84vw;
+        bottom: 19vw;
+   img{
+    height: 4.75vw;
+    width: 11.75vw;
+   
+   
+   }}
+    .menu-contain{
+       
+        height: 100%;
+        width: 0;
+           
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      
+    
+   
+
+    ul {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        padding-top: 11vw;
+        width: 100%;
+        li {
+            
+            a {
+                font-family: $font-madre-rose;
+                text-transform: uppercase;
+                display: block;
+                text-align: left;
+                font-size: $font-size-96;
+                
+                padding: 10px;
+                &:hover {
+                    background-color: #555;
+                }
+            }
+        }
+    }
+
+div{
+    .loop{
+        color: $white;
+        text-transform: uppercase;
+        font-family:$font-madre-rose;
+            text-align: left;
+            font-size: $font-size-40;
+    }
+}
+}
+
+}  
+
+ }
+   .sidebar {
+            height: 100%;
+            width: 250px; /* Set the width of the sidebar */
+            position: absolute; /* Use absolute positioning */
+            z-index: 1;
+            top: 0;
+            left: -250px; /* Hide the sidebar off-screen */
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .openbtn { 
+            position: absolute;
+            height: 100%;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            writing-mode: vertical-rl; /* Add this property to make the button vertical */
+        }
+        
+        .openbtn:hover {
+            background-color: #444;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+        }
+}
+/*INFORMATIONS*/
+.info{
+    background-color: $beige; 
+    a{
+            text-decoration: none; }  
+    .infor{
+        font-family: $font-madre-rose;
+        text-align: end;
+        
+       
+           
+            h1{
+                font-size: $font-size-80;
+        text-transform: uppercase;
+        line-height: 130px;
+
+    }
+          
+        }
+        .exp{
+            padding-top: 20vh;
+            h2{
+                text-transform: uppercase;
+font-weight: 300;
+font-family: $font-made-outer-sans-light;
+
+text-align: left;
+            }
+            p{
+                font-family: $font-made-outer-sans-thin;
+                text-align: left;
+               
+            }
+        }
+        .loopinscri{
+           position: relative;
+           top:15vh;
+           display: flex;
+           align-items: center;
+       } 
+       a{
+        display: flex;
+            h3{
+                font-family: $font-madre-rose;
+                text-transform: uppercase;
+                color: $noir;
+        }
+       }
+   
+       
+}
+.dropdown {
+ 
+.dropdown-conte { 
+    display: none;
+    
+}
+}
+// animation text
+.loop-effect {
+    animation: loop 5s linear infinite;
+   
+    
+}
+
+.loop-effect2 {
+    animation: loop2 5s linear infinite;
+    
+   
+    
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+}
+
+// fin animation text
+
+
+/*FIN INFORMATION*/

@@ -48,18 +48,13 @@ $(document).ready(function() {
 // fin info
 
 // menubar
-$(document).ready(function() {
-    // Ouvre la barre de navigation
-    function openNav() {
-      $(".menu-contain").css("width", "100%");
-    }
-  
-    // Ferme la barre de navigation
-    function closeNav() {
-      $(".menu-contain").css("width", "0");
-    }
-  
-    // Attachez ces fonctions à des éléments ou des événements appropriés, par exemple :
-    $(".menu-link a").click(openNav);
-    $("#closeButton").click(closeNav);
-  });
+function openNav() {
+    document.getElementById("mySidebar").style.left = "0"; /* Slide the sidebar in */
+    document.getElementById("mySidebar").style.width = "100%"; /* Set the width of the sidebar to 100% */
+   
+}
+function closeNav() {
+    document.getElementById("mySidebar").style.left = "0"; /* Slide the sidebar in */
+    document.getElementById("mySidebar").style.width = "0"; /* Set the width of the sidebar to 100% */
+   
+}

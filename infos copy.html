@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <title>thème section</title>
+    <style>    
+    
+        
+        .sidebar {
+            height: 100%;
+            width: 250px; /* Set the width of the sidebar */
+            position: absolute; /* Use absolute positioning */
+            z-index: 1;
+            top: 0;
+            left: -250px; /* Hide the sidebar off-screen */
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .openbtn { 
+            position: absolute;
+            height: 100%;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            writing-mode: vertical-rl; /* Add this property to make the button vertical */
+        }
+        
+        .openbtn:hover {
+            background-color: #444;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+        }
+    </style>
+    </head>
+    <body>
+       
+            <nav>
+        <div id="mySidebar" class="sidebar">
+            <div class="mail">
+                <img src="img/contact.svg" alt="">
+           </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <ul class="col-2">
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="projets.html">projets</a></li>
+                <li><a href="infos.html">infos Pratiques</a></li>
+            </ul>
+            <a class="loop">heff-ferrer@ferrer.eu heff-ferrer@ferrer.eu heff-ferrer@ferrer.eu</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">  <h3>☰ menu</h3></button>  
+        </div></nav>
+
+
+        
+        <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+    </html>
+    
