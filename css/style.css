@@ -350,6 +350,48 @@ header nav .menu .menu-contain div .loop {
   transition: 0.5s ease; /* Ajoutez une transition pour une animation */
 }
 
+.section-detail {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3ece0;
+}
+.section-detail .div-detail {
+  background-color: #fff;
+  height: 60%;
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-detail .div-detail a:first-child {
+  display: none;
+}
+.section-detail .div-detail a:nth-child(2) {
+  display: none;
+  justify-content: flex-end;
+}
+.section-detail .div-detail h1 {
+  font-family: "made_outer_sanslight";
+  font-size: 4vw;
+  color: #3653ff;
+}
+.section-detail .div-detail p {
+  font-family: "made_outer_sansthin";
+  font-size: 2vw;
+  color: #1d1d1d;
+  width: 30ch;
+}
+.section-detail img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 @media (min-width: 992px) {
   .section-menu-responsive {
     display: none;

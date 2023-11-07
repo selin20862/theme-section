@@ -406,6 +406,57 @@ right: 30px;
 }
 // fin projets
 
+.section-detail{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+ 
+    background-color: $beige;
+  .div-detail{
+
+                a:first-child{
+                    display: none;
+                }
+
+                a:nth-child(2){
+                    display: none;
+                    justify-content: flex-end;
+                }
+
+
+                background-color: $white;
+                height: 60%;
+                width: 100%;
+                padding: 3vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                h1{
+                    font-family: $font-made-outer-sans-light;
+                    font-size: 4vw; 
+                    color: $accent;
+                }
+
+                p{
+                    font-family: $font-made-outer-sans-thin;
+                    font-size: 2vw; 
+                    color: $noir;
+                    width: 30ch;
+                }
+            }
+  
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center
+            }
+  
+}
+// fin detail projet
+
 
 @media (min-width: 992px) {
 
