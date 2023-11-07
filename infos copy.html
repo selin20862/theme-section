@@ -7,64 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
     <title>thème section</title>
     <style>    
-    
-        
-        .sidebar {
-            height: 100%;
-            width: 250px; /* Set the width of the sidebar */
-            position: absolute; /* Use absolute positioning */
-            z-index: 1;
-            top: 0;
-            left: -250px; /* Hide the sidebar off-screen */
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        
-        .sidebar a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-        
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-        
-        .sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-        
-        .openbtn { 
-            position: absolute;
-            height: 100%;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #111;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            writing-mode: vertical-rl; /* Add this property to make the button vertical */
-        }
-        
-        .openbtn:hover {
-            background-color: #444;
-        }
-        
-        #main {
-            transition: margin-left .5s;
-            width: 100%;
-            height: 100vh;
-            padding: 0;
-        }
+  
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  display: none;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  padding: 16px;
+}
+</style>
+      
     </style>
     </head>
     <body>
@@ -93,7 +88,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
         <script src="js/script.js"></script>
-        
+        <script>
+            function openNav() {
+              $("#mySidebar").slideDown();
+            }
+            
+            function closeNav() {
+              $("#mySidebar").slideUp();
+            }
+            </script>
     </body>
     </html>
     
