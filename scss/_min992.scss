@@ -1,76 +1,69 @@
 @media (min-width: 992px) { 
    
+/*MENU*/
 
-    .sidebar {
-        height: 100%;
-        width: 250px;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: -250px;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-      
-        a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-      
-          &:hover {
-            color: #f1f1f1;
-          }
-        }
-      
-        .closebtn {
-          position: absolute;
-          top: 0;
-          right: 25px;
-          font-size: 36px;
-          margin-left: 50px;
-        }
-      }
-      
-      .openbtn {
-        position: absolute;
-        height: 100%;
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #111;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        writing-mode: vertical-rl;
-      
+.sidebar {
+  
+    left: -250px; 
+
+    background-color: $noir;
+    overflow-x: hidden;
+    display: flex;
+
+    flex-direction: column; 
+        transition: left 0.5s;
+
+}
+   
+.sidebar a {
+    padding: 8px 8px 8px 32px; 
+        text-align: left;
+
+    transition: 0.3s; 
+}
+
+   
+.openbtn {
+     writing-mode: vertical-rl;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    height: 100%; 
+}
+   
+
+.menu-items { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 11vw;
+    a {
+        font-family: $font-madre-rose;
+        text-transform: uppercase;
+        display: block;
+        text-align: left;
+        font-size: $font-size-96;
+        padding: 10px;
         &:hover {
-          background-color: #444;
+            background-color: #555;
         }
-      }
-      
-      #main {
-        transition: margin-left 0.5s;
-        width: 100%;
-        height: 100vh;
-        padding: 0;
-      } 
-  }
+    }
+}
+   
 /*INFORMATIONS*/
-.info{
-    background-color: $beige; 
+.info{ 
+    
     a{
             text-decoration: none; }  
     .infor{
         font-family: $font-madre-rose;
-        text-align: end;
-        
+        text-align: center;
+       
        
            
             h1{
-                font-size: $font-size-80;
+                font-size: $font-size-40;
         text-transform: uppercase;
         line-height: 130px;
 
@@ -147,11 +140,10 @@ text-align: left;
         transform: translateX(-100%);
     }
 }
-
+}
 
 
 
 // fin animation text
 
 
-/*FIN INFORMATION*/

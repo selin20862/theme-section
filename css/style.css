@@ -21,136 +21,186 @@
 /* font sizes */
 /* Colors */
 @media (min-width: 992px) {
+  /*MENU*/
   .sidebar {
-    height: 100%;
-    width: 250px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
     left: -250px;
-    background-color: #111;
+    background-color: #1d1d1d;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.5s;
   }
   .sidebar a {
     padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+    text-align: left;
     transition: 0.3s;
   }
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
   .openbtn {
-    position: absolute;
-    height: 100%;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
     writing-mode: vertical-rl;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
   }
-  .openbtn:hover {
-    background-color: #444;
-  }
-  #main {
-    transition: margin-left 0.5s;
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 0;
+    padding-top: 11vw;
+  }
+  .menu-items a {
+    font-family: "madre_roseregular";
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    font-size: 96px;
+    padding: 10px;
+  }
+  .menu-items a:hover {
+    background-color: #555;
+  }
+  /*INFORMATIONS*/
+  .info a {
+    text-decoration: none;
+  }
+  .info .infor {
+    font-family: "madre_roseregular";
+    text-align: center;
+  }
+  .info .infor h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 130px;
+  }
+  .info .exp {
+    padding-top: 20vh;
+  }
+  .info .exp h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "made_outer_sanslight";
+    text-align: left;
+  }
+  .info .exp p {
+    font-family: "made_outer_sansthin";
+    text-align: left;
+  }
+  .info .loopinscri {
+    position: relative;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+  }
+  .info a {
+    display: flex;
+  }
+  .info a h3 {
+    font-family: "madre_roseregular";
+    text-transform: uppercase;
+    color: #1d1d1d;
+  }
+  .dropdown .dropdown-conte {
+    display: none;
+  }
+  .loop-effect {
+    animation: loop 5s linear infinite;
+  }
+  .loop-effect2 {
+    animation: loop2 5s linear infinite;
+  }
+  @keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
-/*INFORMATIONS*/
-.info {
-  background-color: #f3ece0;
-}
-.info a {
-  text-decoration: none;
-}
-.info .infor {
-  font-family: "madre_roseregular";
-  text-align: end;
-}
-.info .infor h1 {
-  font-size: 80px;
-  text-transform: uppercase;
-  line-height: 130px;
-}
-.info .exp {
-  padding-top: 20vh;
-}
-.info .exp h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "made_outer_sanslight";
-  text-align: left;
-}
-.info .exp p {
-  font-family: "made_outer_sansthin";
-  text-align: left;
-}
-.info .loopinscri {
-  position: relative;
-  top: 15vh;
-  display: flex;
-  align-items: center;
-}
-.info a {
-  display: flex;
-}
-.info a h3 {
-  font-family: "madre_roseregular";
-  text-transform: uppercase;
-  color: #1d1d1d;
-}
-
-.dropdown .dropdown-conte {
-  display: none;
-}
-
-.loop-effect {
-  animation: loop 5s linear infinite;
-}
-
-.loop-effect2 {
-  animation: loop2 5s linear infinite;
-}
-
-@keyframes loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes loop2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-/*FIN INFORMATION*/
 body {
   box-sizing: border-box;
   margin: 0;
 }
 
 /*MENU*/
+.sidebar {
+  font-family: "made_outer_sanslight";
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #1d1d1d;
+  overflow-x: hidden;
+  display: none;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  content: "☰";
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  z-index: 1;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  padding-top: 11vw;
+  width: 100%;
+}
+ul li a {
+  font-family: "madre_roseregular";
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  font-size: 80px;
+  padding: 10px;
+}
+ul li a:hover {
+  background-color: #555;
+}
+
 /*FIN MENU*/
 /*INFORMATIONS*/
 .info {
@@ -160,13 +210,15 @@ body {
   text-decoration: none;
 }
 .info .infor {
+  position: relative;
+  top: 86px;
   font-family: "madre_roseregular";
   text-align: center;
 }
 .info .infor h1 {
   font-size: 40px;
   text-transform: uppercase;
-  line-height: 130px;
+  line-height: 65px;
 }
 .info .exp {
   padding-top: 20vh;
@@ -178,6 +230,7 @@ body {
   text-align: left;
 }
 .info .exp p {
+  width: 50vw;
   font-family: "made_outer_sansthin";
   text-align: left;
 }
@@ -200,30 +253,6 @@ body {
   display: none;
 }
 
-.loop-effect {
-  animation: loop 5s linear infinite;
-}
-
-.loop-effect2 {
-  animation: loop2 5s linear infinite;
-}
-
-@keyframes loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes loop2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 /*FIN INFORMATION*/
 .fond-noir {
   background-color: #1d1d1d;
