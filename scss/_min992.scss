@@ -3,72 +3,59 @@
 /*MENU*/
 
 .sidebar {
-  
-    left: -250px; 
-
+    left: -250px;
     background-color: $noir;
     overflow-x: hidden;
     display: flex;
-
-    flex-direction: row; 
-        transition: left 0.5s;
-
-}
-   
-.sidebar a {
-    padding: 8px 8px 8px 32px; 
-        text-align: left;
-
-    transition: 0.3s; 
-}
-
-   
-.openbtn {
-     writing-mode: vertical-rl;
-   
-    left: 0;
-    top: 0; 
-    height: 100%; 
-    h3{  
+    flex-direction: row;
+    transition: left 0.5s;
+  
+    a {
+      padding: 8px 8px 8px 32px;
+      text-align: left;
+      transition: 0.3s;
+    }
+  
+    .openbtn {
+      writing-mode: vertical-rl;
+      left: 0;
+      top: 0;
+      height: 100%;
+  
+      h3 {
         font-family: $font-made-outer-sans-light;
         text-transform: uppercase;
-            content: "Menu";
-            color:$white;
-        
-        }
+        content: "Menu";
+        color: $blanc;
+      }
     }
-
-   
-
-.contmenu{
-       flex-direction: row-reverse;
-       align-items: stretch;
-    
- ul {
-          
-           li {
-       
-               a {
-                          
-                text-align: left;
-                font-size: $font-size-96;
-                padding: 10px;
-                flex-direction: row;
-                    &:hover {
-                       background-color: #555;
-                   }
-               
-                }
+  
+    .contmenu {
+      flex-direction: row-reverse;
+      align-items: stretch;
+      background-color: aqua;
+  
+      ul {
+        li {
+          a {
+            text-align: left;
+            font-size: $font-size-96;
+            padding: 10px;
+            flex-direction: row;
+  
+            &:hover {
+              background-color: #555;
             }
-        }       
-}
-
-}
-.loop{
-    position: fixed;
-    bottom: 0;
-}
-   
+          }
+        }
+      }
+    }
+  
+    .loop {
+      position: fixed;
+      bottom: 0;
+    }
+  }
 /*INFORMATIONS*/
 .info{ 
     
@@ -159,7 +146,7 @@ text-align: left;
     }
 }
 
-
+}
 
 
 // fin animation text

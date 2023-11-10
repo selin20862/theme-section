@@ -1,7 +1,9 @@
-body {
+@media (min-width: 1400px) {
+    body {
    box-sizing: border-box;
     margin: 0;
 }
+
 /*MENU*/
 
 .sidebar {
@@ -31,6 +33,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    background-color: aqua;
  ul {
            list-style: none;
            padding: 0;
@@ -78,7 +81,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     border: none;
     
@@ -193,7 +196,6 @@ text-align: left;
 // fin animation text
 
 
-/*FIN INFORMATION*/
 
 .fond-noir {
     background-color: $noir;
@@ -513,4 +515,5 @@ text-align: left;
             }
         }
     }
+}
 }
