@@ -2,13 +2,31 @@ body {
    box-sizing: border-box;
     margin: 0;
 }
+<<<<<<< HEAD
 /*MENU*/
 
 .sidebar {
  font-family: $font-made-outer-sans-light; 
+=======
+header{   
+    position: absolute;
+    z-index: 200;
+  nav{
+    .menu-link{
+    text-transform: uppercase;
+    font-weight: 300;
+    transform: rotate(-90deg)
+   }
+  
+.menu {
+     
+    background-color: $noir;
+    width: 100%;
+>>>>>>> doha
     height: 100%;
     width: 100%;
     position: fixed;
+<<<<<<< HEAD
     z-index: 2000;
     top: 0;
     left: 0;
@@ -41,6 +59,41 @@ body {
            li {
                a {
                 color: $white;
+=======
+    display: flex;
+    align-items: center;
+    
+
+h3{
+ font-family: $font-made-outer-sans-light;   
+}
+    a{
+        text-decoration: none; 
+        color: $white;
+    }
+    .menu-contain{
+    //    visibility: hidden;
+        padding: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    
+    
+div{
+
+   img{
+    height: 4.75vw;
+    position: sticky;
+    left: 192vh;
+   }}
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            
+            a {
+>>>>>>> doha
                 font-family: $font-madre-rose;
                 display: flex;
                 text-align: center;
@@ -91,6 +144,7 @@ body {
  
 
 
+<<<<<<< HEAD
 /*FIN MENU*/
 /*INFORMATIONS*/
 .info{
@@ -194,6 +248,9 @@ text-align: left;
 
 
 /*FIN INFORMATION*/
+=======
+}
+>>>>>>> doha
 
 .fond-noir {
     background-color: $noir;
@@ -343,18 +400,13 @@ text-align: left;
 
     .svg-filtre-open, .svg-filtre-close {
         position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   z-index: 7; /* Pour s'assurer que le SVG est au-dessus du contenu */
-    }
-
-    .svg-filtre-close {
-        display: none;
     }
 
     .filtre {
         display: flex;
-        opacity: 0;
         flex-direction: row;
         justify-content: flex-end;
         height: 10vh;

@@ -1,7 +1,6 @@
 
 
 
-// info
 $(document).ready(function() {
     $(".dropdown-link").click(function(event) {
         event.preventDefault(); // Empêche le lien de naviguer vers une autre page
@@ -13,7 +12,10 @@ $(document).ready(function() {
         $(".custom-dropdown").css({
             "display": "flex",
             "justify-content": "flex-end",
-            "flex-direction": "column"
+            "flex-direction": "column",
+            "align-items":" flex-start"
+          
+            
         });
     });
 });
@@ -44,4 +46,23 @@ $(document).ready(function() {
     function hideFiltre() {
         filtre.hide();
     }
+});
+// // fin info
+
+$(document).ready(function() {
+        $(".openbtn").click(function() {
+            if (window.innerWidth > 992) {
+                $("#mySidebar").animate({width: 'toggle'});
+            } else {
+                $("#mySidebar").slideDown();
+            }
+        });
+
+        $(".closebtn").click(function() {
+            if (window.innerWidth > 992) {
+                $("#mySidebar").animate({width: 'toggle'});
+            } else {
+                $("#mySidebar").slideUp();
+            }
+        });
 });
