@@ -20,6 +20,121 @@
 /* fonts */
 /* font sizes */
 /* Colors */
+@media (min-width: 992px) {
+  /*MENU*/
+  .sidebar {
+    left: -250px;
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.5s;
+  }
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-align: left;
+    transition: 0.3s;
+  }
+  .openbtn {
+    writing-mode: vertical-rl;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  .openbtn h3 {
+    font-family: "made_outer_sanslight";
+    text-transform: uppercase;
+    content: "Menu";
+    color: #fff;
+  }
+  .contmenu {
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+  .contmenu ul li a {
+    text-align: left;
+    font-size: 96px;
+    padding: 10px;
+    flex-direction: row;
+  }
+  .contmenu ul li a:hover {
+    background-color: #555;
+  }
+}
+.loop {
+  position: fixed;
+  bottom: 0;
+}
+
+/*INFORMATIONS*/
+.info a {
+  text-decoration: none;
+}
+.info .infor {
+  font-family: "madre_roseregular";
+  text-align: center;
+}
+.info .infor h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 130px;
+}
+.info .exp {
+  padding-top: 20vh;
+}
+.info .exp h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "made_outer_sanslight";
+  text-align: left;
+}
+.info .exp p {
+  font-family: "made_outer_sansthin";
+  text-align: left;
+}
+.info .loopinscri {
+  position: relative;
+  top: 15vh;
+  display: flex;
+  align-items: center;
+}
+.info a {
+  display: flex;
+}
+.info a h3 {
+  font-family: "madre_roseregular";
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.dropdown .dropdown-conte {
+  display: none;
+}
+
+.loop-effect {
+  animation: loop 5s linear infinite;
+}
+
+.loop-effect2 {
+  animation: loop2 5s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 body {
   box-sizing: border-box;
   margin: 0;
