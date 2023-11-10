@@ -48,26 +48,7 @@ $(document).ready(function() {
     }
 });
 // // fin info
-// $(document).ready(function() {
-// function openNav() {
-//     if (window.innerWidth > 992) {
-//         $("#mySidebar").toggle();
-       
-         
-//     } else {
-//         $("#mySidebar").slideDown();
-//     }
-// }
 
-// function closeNav() {
-//     if (window.innerWidth > 992) {
-//         $("#mySidebar").toggle();
-//     } else {
-//         $("#mySidebar").slideUp();
-//     }
-// }
-
-// });
 $(document).ready(function() {
         $(".openbtn").click(function() {
             if (window.innerWidth > 992) {

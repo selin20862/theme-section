@@ -10,7 +10,7 @@
     overflow-x: hidden;
     display: flex;
 
-    flex-direction: column; 
+    flex-direction: row; 
         transition: left 0.5s;
 
 }
@@ -25,30 +25,48 @@
    
 .openbtn {
      writing-mode: vertical-rl;
-    position: absolute;
+   
     left: 0;
     top: 0; 
     height: 100%; 
-}
-   
-
-.menu-items { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 11vw;
-    a {
-        font-family: $font-madre-rose;
+    h3{  
+        font-family: $font-made-outer-sans-light;
         text-transform: uppercase;
-        display: block;
-        text-align: left;
-        font-size: $font-size-96;
-        padding: 10px;
-        &:hover {
-            background-color: #555;
+            content: "Menu";
+            color:$white;
+        
         }
     }
+
+   
+
+.contmenu{
+       flex-direction: row-reverse;
+       align-items: stretch;
+    
+ ul {
+          
+           li {
+       
+               a {
+                          
+                text-align: left;
+                font-size: $font-size-96;
+                padding: 10px;
+                flex-direction: row;
+                    &:hover {
+                       background-color: #555;
+                   }
+               
+                }
+            }
+        }       
+}
+
+}
+.loop{
+    position: fixed;
+    bottom: 0;
 }
    
 /*INFORMATIONS*/
@@ -140,7 +158,7 @@ text-align: left;
         transform: translateX(-100%);
     }
 }
-}
+
 
 
 
