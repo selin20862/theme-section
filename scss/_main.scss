@@ -2,31 +2,13 @@ body {
    box-sizing: border-box;
     margin: 0;
 }
-<<<<<<< HEAD
 /*MENU*/
 
 .sidebar {
  font-family: $font-made-outer-sans-light; 
-=======
-header{   
-    position: absolute;
-    z-index: 200;
-  nav{
-    .menu-link{
-    text-transform: uppercase;
-    font-weight: 300;
-    transform: rotate(-90deg)
-   }
-  
-.menu {
-     
-    background-color: $noir;
-    width: 100%;
->>>>>>> doha
     height: 100%;
     width: 100%;
     position: fixed;
-<<<<<<< HEAD
     z-index: 2000;
     top: 0;
     left: 0;
@@ -59,41 +41,6 @@ header{
            li {
                a {
                 color: $white;
-=======
-    display: flex;
-    align-items: center;
-    
-
-h3{
- font-family: $font-made-outer-sans-light;   
-}
-    a{
-        text-decoration: none; 
-        color: $white;
-    }
-    .menu-contain{
-    //    visibility: hidden;
-        padding: 10px;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-    
-    
-div{
-
-   img{
-    height: 4.75vw;
-    position: sticky;
-    left: 192vh;
-   }}
-    ul {
-        list-style: none;
-        padding: 0;
-        li {
-            
-            a {
->>>>>>> doha
                 font-family: $font-madre-rose;
                 display: flex;
                 text-align: center;
@@ -144,7 +91,6 @@ div{
  
 
 
-<<<<<<< HEAD
 /*FIN MENU*/
 /*INFORMATIONS*/
 .info{
@@ -248,9 +194,6 @@ text-align: left;
 
 
 /*FIN INFORMATION*/
-=======
-}
->>>>>>> doha
 
 .fond-noir {
     background-color: $noir;
