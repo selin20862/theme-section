@@ -60,79 +60,74 @@
   .contmenu ul li a:hover {
     background-color: #555;
   }
-}
-.loop {
-  position: fixed;
-  bottom: 0;
-}
-
-/*INFORMATIONS*/
-.info a {
-  text-decoration: none;
-}
-.info .infor {
-  font-family: "madre_roseregular";
-  text-align: center;
-}
-.info .infor h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 130px;
-}
-.info .exp {
-  padding-top: 20vh;
-}
-.info .exp h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "made_outer_sanslight";
-  text-align: left;
-}
-.info .exp p {
-  font-family: "made_outer_sansthin";
-  text-align: left;
-}
-.info .loopinscri {
-  position: relative;
-  top: 15vh;
-  display: flex;
-  align-items: center;
-}
-.info a {
-  display: flex;
-}
-.info a h3 {
-  font-family: "madre_roseregular";
-  text-transform: uppercase;
-  color: #1d1d1d;
-}
-
-.dropdown .dropdown-conte {
-  display: none;
-}
-
-.loop-effect {
-  animation: loop 5s linear infinite;
-}
-
-.loop-effect2 {
-  animation: loop2 5s linear infinite;
-}
-
-@keyframes loop {
-  0% {
-    transform: translateX(0);
+  .loop {
+    position: fixed;
+    bottom: 0;
   }
-  100% {
-    transform: translateX(-100%);
+  /*INFORMATIONS*/
+  .info a {
+    text-decoration: none;
   }
-}
-@keyframes loop2 {
-  0% {
-    transform: translateX(0);
+  .info .infor {
+    font-family: "madre_roseregular";
+    text-align: center;
   }
-  100% {
-    transform: translateX(-100%);
+  .info .infor h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 130px;
+  }
+  .info .exp {
+    padding-top: 20vh;
+  }
+  .info .exp h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "made_outer_sanslight";
+    text-align: left;
+  }
+  .info .exp p {
+    font-family: "made_outer_sansthin";
+    text-align: left;
+  }
+  .info .loopinscri {
+    position: relative;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+  }
+  .info a {
+    display: flex;
+  }
+  .info a h3 {
+    font-family: "madre_roseregular";
+    text-transform: uppercase;
+    color: #1d1d1d;
+  }
+  .dropdown .dropdown-conte {
+    display: none;
+  }
+  .loop-effect {
+    animation: loop 5s linear infinite;
+  }
+  .loop-effect2 {
+    animation: loop2 5s linear infinite;
+  }
+  @keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
 body {

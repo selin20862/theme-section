@@ -1,7 +1,9 @@
-body {
+
+    body {
    box-sizing: border-box;
     margin: 0;
 }
+
 /*MENU*/
 
 .sidebar {
@@ -31,6 +33,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    background-color: aqua;
  ul {
            list-style: none;
            padding: 0;
@@ -193,7 +196,6 @@ text-align: left;
 // fin animation text
 
 
-/*FIN INFORMATION*/
 
 .fond-noir {
     background-color: $noir;
