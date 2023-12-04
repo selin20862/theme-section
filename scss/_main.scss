@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: aqua;
+ 
  ul {
            list-style: none;
            padding: 0;
@@ -59,7 +59,7 @@
         }       
 }
 .loop{
-        position: fixed;
+      
     bottom: 0;
 }
 
@@ -76,65 +76,95 @@
   }
 
   .openbtn {
-    z-index: 4;
+    z-index: 100;
     position: absolute;
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: rgb(255, 255, 255);
+    
     padding: 10px 15px;
     border: none;
+      .openbtn img {
+display: block;
     
+  }  .openbtn:hover {
+   
   }
 
-  .openbtn:hover {
-    background-color: #444;
+  .menu-title {
+    display: none; /* Hide the h3 element */
+}
   }
 
- 
+
+
+
+
 
 
 /*FIN MENU*/
 /*INFORMATIONS*/
-.info{
-   
-    background-color: $beige; 
-    a{
-            text-decoration: none; }  
-        
-    .infor{
-        position: relative;
-        top: 86px;
-        font-family: $font-madre-rose;
-        text-align: center;
-      
-           
-            h1{
-                font-size: $font-size-40;
-                text-transform: uppercase;
-                line-height: 65px;
-
+.info {
+    /* Set the background color of the `.info` section */
+    background-color: $beige;
+  width: 100%;
+    /* Remove text decoration from all links within the `.info` section */
+    a {
+      text-decoration: none;
     }
-          
-        }
-        .exp{
-           
-            padding-top: 20vh;
-            h2{
-                text-transform: uppercase;
-font-weight: 300;
-font-family: $font-made-outer-sans-light;
+  
+    /* Position the `.infor` div relative to its parent element */
+    .infor {
+      position: relative;
+      top: 86px; 
+      /* Set the font family to `$font-madre-rose` */
+      font-family: $font-madre-rose;
+  
+      /* Set the text alignment to center */
+      text-align: center;
+  
+      /* Style the `h1` elements within the `.infor` div */
+      h1 {
+        font-size: 40px;
+        text-transform: uppercase; 
+        line-height: 65px; 
+      }
+    }
+  
+   
+    .exp {
+      padding-top: 20vh;
+  
+      /* Style the `h2` elements within the `.exp` div */
+      h2 {
+        text-transform: uppercase;
+        font-weight: 300; 
+        font-family: $font-madre-rose; 
+        text-align: left;
+      }
+  
+     
+      p {
+        width: 50vw; 
+        font-family: $font-madre-rose;
+        text-align: left;
+      }
+    }
+  }
+  
+       
+   .dropdown {
+ 
+.dropdown-conte { 
+    display: none;
+    
+}
+}
+       
 
-text-align: left;
-            }
-            p{ 
-                width:50vw;
-                font-family: $font-made-outer-sans-thin;
-                text-align: left;
-               
-            }
-        }
-        .loopinscri{
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden; .loopinscri{
            position: relative;
            top:15vh;
            display: flex;
@@ -148,50 +178,30 @@ text-align: left;
                 color: $noir;
         }
        }
+  }
+  
+  /* Définir le texte */
+  .text-wrapper > span {
+           text-transform: uppercase;
    
-       
-}
-.dropdown {
- 
-.dropdown-conte { 
-    display: none;
-    
-}
-}
-// // animation text
-// .loop-effect {
-//     animation: loop 5s linear infinite;
-//    margin-bottom: 0;
-    
-// }
-
-// .loop-effect2 {
-//     animation: loop2 5s linear infinite;
-    
-   
-    
-// }
-
-// @keyframes loop {
-//     0% {
-//         transform: translateX(0);
-//     }
-//     100% {
-//         transform: translateX(-100%);
-//     }
-// }
-
-// @keyframes loop2 {
-//     0% {
-//         transform: translateX(0);
-//     }
-//     100% {
-//         transform: translateX(-100%);
-//     }
-// }
-
-
-
+    animation: move-rtl 6000ms linear infinite;
+  
+    color: transparent;
+    white-space: nowrap;
+    padding-top: 6rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Animation du texte */
+  @keyframes move-rtl {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 
 // fin animation text
 

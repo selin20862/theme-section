@@ -50,19 +50,24 @@ $(document).ready(function() {
 // // fin info
 
 $(document).ready(function() {
-        $(".openbtn").click(function() {
-            if (window.innerWidth > 992) {
-                $("#mySidebar").animate({width: 'toggle'});
-            } else {
-                $("#mySidebar").slideDown();
-            }
-        });
+
+    $(".openbtn").click(function() {
+        if (window.innerWidth > 992) {
+            $("#mySidebar").animate({width: 'toggle'});
+        } else {
+            $("#mySidebar").slideDown();
+        }   
+       
+    });
 
         $(".closebtn").click(function() {
             if (window.innerWidth > 992) {
                 $("#mySidebar").animate({width: 'toggle'});
             } else {
-                $("#mySidebar").slideUp();
+                $("#mySidebar").slideUp(); 
+                
             }
         });
+    
+        
 });
