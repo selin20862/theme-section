@@ -7,11 +7,18 @@
     // projets accueil
     .sectiontravaux{
         padding: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        height: 100vh;    
+        width: 200vw;
+
+        .articles-list {
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+        }
     
         &::after, &::before {
             content: "";
@@ -107,9 +114,9 @@
     // projets
     .sectionprojets{
         padding: 0;
-        height: 100vh;
-     
-    
+        height: 100vh;    
+        width: 200vw;
+
         .articles-list {
             padding: 0;
             height: 100vh;

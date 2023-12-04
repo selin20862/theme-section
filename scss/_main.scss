@@ -1,6 +1,7 @@
 body {
    box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
 }
 /*MENU*/
 header{   
@@ -226,7 +227,7 @@ right: 30px;
     article {
         width: 55vw;
         height: 40vh;
-        margin:0 20vw;
+        margin:10vw 20vw;
         position: relative;
 
         &:nth-child(even) {
@@ -274,18 +275,11 @@ right: 30px;
 // projets
 .sectionprojets{
     padding: 0;
-    height: 100vh;
- 
-
-    .articles-list {
-        padding: 0;
-        height: 100vh;  
-        min-width: 100vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    // height: 95vh;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
  
 
