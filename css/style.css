@@ -23,6 +23,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /*MENU*/
@@ -199,35 +200,22 @@ body {
   background-color: #f3ece0;
 }
 
+.section-menu-responsive {
+  width: 100%;
+  height: 5vh;
+}
+.section-menu-responsive a {
+  position: fixed;
+  z-index: 6;
+  top: 30px;
+  right: 30px;
+}
+
 .sectiontravaux {
   padding: 0;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.sectiontravaux::after, .sectiontravaux::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-  width: 300px; /* Ajustez la largeur du dégradé selon vos besoins */
-}
-.sectiontravaux::after {
-  right: 0;
-  background: linear-gradient(to left, #1d1d1d, rgba(0, 0, 0, 0));
-}
-.sectiontravaux::before {
-  left: 0;
-  background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
-}
-.sectiontravaux .svg-souris {
-  position: fixed;
-  z-index: 4;
-  bottom: 20px;
-  right: 20px;
 }
 .sectiontravaux h1 {
   position: fixed;
@@ -237,13 +225,13 @@ body {
   z-index: -1;
   color: #fff;
   font-family: "madre_roseregular";
-  font-size: 2vw;
+  font-size: 5vw;
   white-space: nowrap;
 }
 .sectiontravaux article {
-  width: 15vw;
+  width: 55vw;
   height: 40vh;
-  margin-right: 10vw;
+  margin: 10vw 20vw;
   position: relative;
 }
 .sectiontravaux article:nth-child(even) {
@@ -280,36 +268,12 @@ body {
   filter: grayscale(100%);
   transition: 0.5s ease; /* Ajoutez une transition pour une animation */
 }
-.sectiontravaux article .image-travaux:hover::before {
-  background: transparent; /* Supprime la couleur de superposition au survol */
-}
-.sectiontravaux article .image-travaux:hover img {
-  filter: grayscale(0%); /* Supprime l'effet de gris au survol */
-}
 
 .sectionprojets {
   padding: 0;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.sectionprojets::after, .sectionprojets::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-  width: 300px; /* Ajustez la largeur du dégradé selon vos besoins */
-}
-.sectionprojets::after {
-  right: 0;
-  background: linear-gradient(to left, #f3ece0, rgba(0, 0, 0, 0));
-}
-.sectionprojets::before {
-  left: 0;
-  background: linear-gradient(to right, #f3ece0, rgba(0, 0, 0, 0));
 }
 .sectionprojets .svg-souris {
   position: fixed;
@@ -317,11 +281,18 @@ body {
   bottom: 20px;
   right: 20px;
 }
+.sectionprojets .svg-souris svg:first-child {
+  display: none;
+}
 .sectionprojets .svg-filtre-open, .sectionprojets .svg-filtre-close {
   position: fixed;
   top: 20px;
   right: 20px;
+  top: 30px;
   z-index: 7; /* Pour s'assurer que le SVG est au-dessus du contenu */
+}
+.sectionprojets .svg-filtre-open a svg, .sectionprojets .svg-filtre-close a svg {
+  width: 35px;
 }
 .sectionprojets .filtre {
   display: flex;
@@ -348,7 +319,7 @@ body {
   padding-right: 2vw;
 }
 .sectionprojets .filtre ul li a {
-  font-size: 1vw;
+  font-size: 3vw;
   font-family: "made_outer_sanslight";
   text-decoration: none;
   color: #fff;
@@ -361,13 +332,13 @@ body {
   z-index: -1;
   color: #1d1d1d;
   font-family: "madre_roseregular";
-  font-size: 2vw;
+  font-size: 5vw;
   white-space: nowrap;
 }
 .sectionprojets article {
-  width: 15vw;
+  width: 55vw;
   height: 40vh;
-  margin-right: 10vw;
+  margin: 10vw 20vw;
   position: relative;
 }
 .sectionprojets article:nth-child(even) {
@@ -404,67 +375,45 @@ body {
   filter: grayscale(100%);
   transition: 0.5s ease; /* Ajoutez une transition pour une animation */
 }
-.sectionprojets article .image-travaux:hover::before {
-  background: transparent; /* Supprime la couleur de superposition au survol */
-}
-.sectionprojets article .image-travaux:hover img {
-  filter: grayscale(0%); /* Supprime l'effet de gris au survol */
-}
 
 .section-detail {
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: lightblue;
-}
-.section-detail article {
-  height: 100vh;
-  width: 50vw;
-  background-color: lightcoral;
-}
-.section-detail article:first-child {
+  flex-direction: column;
   background-color: #f3ece0;
-  display: flex;
-  align-items: flex-end;
 }
-.section-detail article:first-child .div-detail {
+.section-detail .div-detail {
   background-color: #fff;
-  height: 50vh;
+  height: 60%;
   width: 100%;
-  padding: 3vw 3vw 1.5vw 3vw;
+  padding: 7vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.section-detail article:first-child .div-detail .last {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.section-detail .div-detail a:first-child {
+  display: none;
 }
-.section-detail article:first-child .div-detail .last a {
-  color: #1d1d1d;
-  font-family: "made_outer_sanslight";
-  font-size: 1.2vw;
-  text-decoration: none;
+.section-detail .div-detail a:nth-child(2) {
+  display: none;
+  justify-content: flex-end;
 }
-.section-detail article:first-child .div-detail h1 {
+.section-detail .div-detail h1 {
+  text-align: center;
   font-family: "made_outer_sanslight";
-  font-size: 2vw;
+  font-size: 5vw;
   color: #3653ff;
 }
-.section-detail article:first-child .div-detail p {
+.section-detail .div-detail p {
   font-family: "made_outer_sansthin";
-  font-size: 1vw;
+  font-size: 2.2vw;
   color: #1d1d1d;
-  width: 50ch;
 }
-.section-detail article:last-child {
-  background-color: lavender;
+.section-detail .div-detail .orderbtn {
+  order: -1;
 }
-.section-detail article:last-child img {
-  width: 100%;
+.section-detail img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -562,5 +511,284 @@ body {
     background-color: white; /* Optionnel : couleur de fond pour la visibilité */
     z-index: 1;
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .section-menu-responsive {
+    display: none;
+  }
+  .sectiontravaux {
+    padding: 0;
+    height: 100vh;
+    width: 200vw;
+  }
+  .sectiontravaux .articles-list {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sectiontravaux::after, .sectiontravaux::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 300px; /* Ajustez la largeur du dégradé selon vos besoins */
+  }
+  .sectiontravaux::after {
+    right: 0;
+    background: linear-gradient(to left, #1d1d1d, rgba(0, 0, 0, 0));
+  }
+  .sectiontravaux::before {
+    left: 0;
+    background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
+  }
+  .sectiontravaux h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #fff;
+    font-family: "madre_roseregular";
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+  .sectiontravaux article {
+    width: 15vw;
+    height: 40vh;
+    margin: 0 10vw 0 0;
+    position: relative;
+  }
+  .sectiontravaux article:nth-child(even) {
+    /* Votre style pour les articles pairs ici */
+    display: flex;
+    align-items: flex-end;
+  }
+  .sectiontravaux article .image-travaux {
+    width: 100%;
+    position: relative;
+    display: inline-block; /* Ensures that the container size matches the image size */
+  }
+  .sectiontravaux article .image-travaux::before {
+    content: "";
+    background: #3653ff; /* Your overlay color */
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Make sure the overlay is behind the image */
+    transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+  }
+  .sectiontravaux article .image-travaux img {
+    width: 100%;
+    max-height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    display: block; /* Removes any extra space below the image */
+    z-index: 2; /* Ensures the image is on top of the overlay */
+    filter: grayscale(100%);
+    transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+  }
+  .sectiontravaux article .image-travaux:hover::before {
+    background: transparent; /* Supprime la couleur de superposition au survol */
+  }
+  .sectiontravaux article .image-travaux:hover img {
+    filter: grayscale(0%); /* Supprime l'effet de gris au survol */
+  }
+  .sectionprojets {
+    padding: 0;
+    height: 100vh;
+    width: 200vw;
+  }
+  .sectionprojets .articles-list {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sectionprojets::after, .sectionprojets::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 300px; /* Ajustez la largeur du dégradé selon vos besoins */
+  }
+  .sectionprojets::after {
+    right: 0;
+    background: linear-gradient(to left, #f3ece0, rgba(0, 0, 0, 0));
+  }
+  .sectionprojets::before {
+    left: 0;
+    background: linear-gradient(to right, #f3ece0, rgba(0, 0, 0, 0));
+  }
+  .sectionprojets .svg-souris {
+    position: fixed;
+    z-index: 4;
+    bottom: 20px;
+    right: 20px;
+  }
+  .sectionprojets .svg-souris svg:first-child {
+    display: flex;
+  }
+  .sectionprojets .svg-souris svg:last-child {
+    display: none;
+  }
+  .sectionprojets .svg-filtre-open, .sectionprojets .svg-filtre-close {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 7; /* Pour s'assurer que le SVG est au-dessus du contenu */
+  }
+  .sectionprojets .svg-filtre-open a svg, .sectionprojets .svg-filtre-close a svg {
+    width: 50px;
+  }
+  .sectionprojets .svg-filtre-close {
+    display: none;
+  }
+  .sectionprojets .filtre {
+    display: flex;
+    opacity: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10vh;
+    width: 100%;
+    background-color: #3653ff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    padding-right: 5vw;
+  }
+  .sectionprojets .filtre ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sectionprojets .filtre ul li {
+    padding-right: 2vw;
+  }
+  .sectionprojets .filtre ul li a {
+    font-size: 1vw;
+    font-family: "made_outer_sanslight";
+    text-decoration: none;
+    color: #fff;
+  }
+  .sectionprojets h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #1d1d1d;
+    font-family: "madre_roseregular";
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+  .sectionprojets article {
+    width: 15vw;
+    height: 40vh;
+    margin: 0 10vw 0 0;
+    position: relative;
+  }
+  .sectionprojets article:nth-child(even) {
+    /* Votre style pour les articles pairs ici */
+    display: flex;
+    align-items: flex-end;
+  }
+  .sectionprojets article .image-travaux {
+    width: 100%;
+    position: relative;
+    display: inline-block; /* Ensures that the container size matches the image size */
+  }
+  .sectionprojets article .image-travaux::before {
+    content: "";
+    background: #3653ff; /* Your overlay color */
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Make sure the overlay is behind the image */
+    transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+  }
+  .sectionprojets article .image-travaux img {
+    width: 100%;
+    max-height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    display: block; /* Removes any extra space below the image */
+    z-index: 2; /* Ensures the image is on top of the overlay */
+    filter: grayscale(100%);
+    transition: 0.5s ease; /* Ajoutez une transition pour une animation */
+  }
+  .sectionprojets article .image-travaux:hover::before {
+    background: transparent; /* Supprime la couleur de superposition au survol */
+  }
+  .sectionprojets article .image-travaux:hover img {
+    filter: grayscale(0%); /* Supprime l'effet de gris au survol */
+  }
+  .section-detail {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #f3ece0;
+  }
+  .section-detail .div-detail {
+    background-color: #fff;
+    height: 60%;
+    width: 100%;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section-detail .div-detail a:first-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .section-detail .div-detail a:nth-child(2) {
+    display: none;
+    justify-content: flex-end;
+  }
+  .section-detail .div-detail h1 {
+    font-family: "made_outer_sanslight";
+    font-size: 2vw;
+    color: #3653ff;
+  }
+  .section-detail .div-detail p {
+    font-family: "made_outer_sansthin";
+    font-size: 1vw;
+    color: #1d1d1d;
+    width: 50ch;
+  }
+  .section-detail .div-detail .orderbtn {
+    order: 1;
+  }
+  .section-detail img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }/*# sourceMappingURL=style.css.map */
