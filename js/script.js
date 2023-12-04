@@ -47,7 +47,8 @@ $(document).ready(function() {
 
     var imageWidth = $('.section-detail img').width();
     var containerWidth = $('.section-detail').width();
-    if (imageWidth > 0.5 * containerWidth) {
+
+    if (window.innerWidth > 992 && imageWidth > 0.5 * containerWidth) {
         console.log('L\'image est plus grande que 50% du conteneur');
 
         $('.div-detail').css({
@@ -81,7 +82,6 @@ $(document).ready(function() {
         });
     }
 
- 
-
+    
 });
 
