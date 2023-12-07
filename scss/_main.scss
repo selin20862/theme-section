@@ -77,8 +77,11 @@
      }
    
      .openbtn {
+        background-color: transparent;
+        top: 10px;
+        left: 10px;
        z-index: 100;
-       position: absolute;
+       position: fixed;
        font-size: 20px;
        cursor: pointer;
        
@@ -338,23 +341,30 @@ right: 30px;
             display: none;}
     }
 
-    .svg-filtre-open, .svg-filtre-close {
-        position: fixed;
-  top: 20px;
-  right: 20px;
-//   left: 30px;
-
-  top: 30px;
-  z-index: 7; /* Pour s'assurer que le SVG est au-dessus du contenu */
-  a{
-    svg{
-        width: 35px;
+    .svg-filtre-open,
+    .svg-filtre-close {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      z-index: 7;
+  
+      /* Pour s'assurer que le SVG est au-dessus du contenu */
+      a {
+        svg {
+          width: 35px;
+        }
+      }
     }
-  }
-    }
 
-    .filtre {
+    .svg-filtre-close {
+        display: none;
+      }
+    
+
+
+      .filtre {
         display: flex;
+        opacity: 0;
         flex-direction: row;
         justify-content: flex-end;
         height: 10vh;
@@ -365,26 +375,27 @@ right: 30px;
         right: 0;
         z-index: 6;
         padding-right: 5vw;
-
-        ul{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            li{
-                padding-right: 2vw;
-                a{
-                    font-size: 3vw;
-                    font-family: $font-made-outer-sans-light;
-                    text-decoration: none;
-                    color: $white;
-                }
+    
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+    
+          li {
+            padding-right: 3vw;
+    
+            a {
+              font-size: 3vw;
+              font-family: $font-made-outer-sans-light;
+              text-decoration: none;
+              color: $white;
             }
+          }
         }
-    }
+      }
 
     h1 {
         

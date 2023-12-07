@@ -73,6 +73,16 @@ $(document).ready(function() {
         
 });
 
+
+    if (window.innerWidth < 992) {
+        $('.openbtn h3').css('display', 'none');
+        $('.openbtn svg').css('display', 'block');
+    }
+    else if (window.innerWidth >= 992) {
+        $('.openbtn h3').css('display', 'block');
+        $('.openbtn svg').css('display', 'none');
+    }
+
     var imageWidth = $('.section-detail img').width();
     var containerWidth = $('.section-detail').width();
 
