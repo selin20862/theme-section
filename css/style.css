@@ -456,6 +456,7 @@ body {
     font-family: "made_outer_sanslight";
     text-transform: uppercase;
     color: #fff;
+    rotate: -90deg;
   }
   .contmenu {
     flex-direction: row-reverse;
