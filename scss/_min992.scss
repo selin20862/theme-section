@@ -40,7 +40,7 @@
     
     .contmenu {
         flex-direction: row-reverse;
-        align-items: stretch;
+        align-items: center;
             
         ul {
             li {
@@ -113,7 +113,7 @@
             
             h3 {
                 font-family: $font-madre-rose;
-                text-transform: uppercase;
+                
                 color: $noir;
             }
         }
@@ -121,17 +121,14 @@
     
     .dropdown {
         .dropdown-conte { 
-                position: absolute;
-                top: 100%; /* Positionnez-le sous l'élément déclencheur */
-                left: 0;
-                background-color: white; /* Optionnel : couleur de fond pour la visibilité */
-                z-index: 1;
+          
             display: none;
         }
     }
     
  
 }
+
 @media (min-width: 992px) {
 
     .section-menu-responsive {
