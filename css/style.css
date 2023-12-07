@@ -84,7 +84,6 @@ body {
 .sidebar .closebtn {
   padding: 8px 8px 8px 32px;
   display: block;
-  color: #fff;
   position: absolute;
   top: 0;
   right: 25px;
@@ -140,12 +139,12 @@ body {
 .info .exp h2 {
   text-transform: uppercase;
   font-weight: 300;
-  font-family: "madre_roseregular";
+  font-family: "made_outer_sanslight";
   text-align: left;
 }
 .info .exp p {
   width: 50vw;
-  font-family: "madre_roseregular";
+  font-family: "made_outer_sansthin";
   text-align: left;
 }
 
@@ -157,19 +156,28 @@ body {
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
+  font-size: 20px;
 }
-.text-wrapper .loopinscri {
+
+.loop-inscri {
   position: relative;
   top: 15vh;
   display: flex;
   align-items: center;
 }
-.text-wrapper a {
-  display: flex;
-}
-.text-wrapper a h3 {
+
+.loop-effect1 a,
+.loop-effect2 a {
   font-family: "madre_roseregular";
   text-transform: uppercase;
+  display: flex;
+}
+
+.loop-effect1 a {
+  color: #fff;
+}
+
+.loop-effect2 a {
   color: #1d1d1d;
 }
 
@@ -177,10 +185,13 @@ body {
 .text-wrapper > span {
   text-transform: uppercase;
   animation: move-rtl 6000ms linear infinite;
-  color: transparent;
   white-space: nowrap;
   padding-top: 6rem;
   letter-spacing: 1px;
+}
+
+.loop-effect1 a:hover .text-wrapper > span {
+  animation-play-state: paused; /* Mettre en pause l'animation au survol */
 }
 
 /* Animation du texte */
@@ -192,6 +203,7 @@ body {
     transform: translateX(-100%);
   }
 }
+/*FIN INFORMATION */
 .fond-noir {
   background-color: #1d1d1d;
 }

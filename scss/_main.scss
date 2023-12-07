@@ -8,203 +8,216 @@
 /*MENU*/
 
 .sidebar {
- font-family: $font-made-outer-sans-light; 
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    left: 0;
-    background-color: $noir;
-    overflow-x: hidden;
-    display: none;
-    padding-top: 60px;
-  }
-
-  .sidebar a {
-  
-    text-transform: uppercase;
-    font-weight: 300;
-    text-decoration: none;
-  }  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  .contmenu{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
- 
- ul {
-           list-style: none;
-           padding: 0;
-           width: 100%;
-           list-style: none;
-           padding-top: 11vw;
-           width: 100%;
-           li {
-               a {
-                color: $white;
-                font-family: $font-madre-rose;
-                display: flex;
-                text-align: center;
-                font-size: 40px;
-                padding: 10px;
-                flex-direction: column;
-                   &:hover {
-                       background-color: #555;
-                   }
-               
-                }
-            }
-        }       
-}
-.loop{
-      
-    bottom: 0;
-}
-
-  .sidebar .closebtn {  
-    padding: 8px 8px 8px 32px;
-    display: block;
-    color: $white;
+    font-family: $font-made-outer-sans-light; 
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       z-index: 2000;
+       top: 0;
+       left: 0;
+       background-color: $noir;
+       overflow-x: hidden;
+       display: none;
+       padding-top: 60px;
+     }
    
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .openbtn {
-    z-index: 100;
-    position: absolute;
-    font-size: 20px;
-    cursor: pointer;
-    
-    padding: 10px 15px;
-    border: none;
-      .openbtn img {
-display: block;
-    
-  }  .openbtn:hover {
-   
-  }
-
-  .menu-title {
-    display: none; /* Hide the h3 element */
-}
-  }
-
-
-
-
-
-
-
-/*FIN MENU*/
-/*INFORMATIONS*/
-.info {
-    /* Set the background color of the `.info` section */
-    background-color: $beige;
-  width: 100%;
-    /* Remove text decoration from all links within the `.info` section */
-    a {
-      text-decoration: none;
-    }
-  
-    /* Position the `.infor` div relative to its parent element */
-    .infor {
-      position: relative;
-      top: 86px; 
-      /* Set the font family to `$font-madre-rose` */
-      font-family: $font-madre-rose;
-  
-      /* Set the text alignment to center */
-      text-align: center;
-  
-      /* Style the `h1` elements within the `.infor` div */
-      h1 {
-        font-size: 40px;
-        text-transform: uppercase; 
-        line-height: 65px; 
-      }
-    }
-  
-   
-    .exp {
-      padding-top: 20vh;
-  
-      /* Style the `h2` elements within the `.exp` div */
-      h2 {
-        text-transform: uppercase;
-        font-weight: 300; 
-        font-family: $font-madre-rose; 
-        text-align: left;
-      }
-  
+     .sidebar a {
      
-      p {
-        width: 50vw; 
-        font-family: $font-madre-rose;
-        text-align: left;
-      }
-    }
-  }
-  
-       
-   .dropdown {
- 
-.dropdown-conte { 
-    display: none;
+       text-transform: uppercase;
+       font-weight: 300;
+       text-decoration: none;
+     }  
+     .sidebar a:hover {
+       color: #f1f1f1;
+     }
+     .contmenu{
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
     
-}
-}
-       
-
-.text-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden; .loopinscri{
-           position: relative;
-           top:15vh;
-           display: flex;
-           align-items: center;
-       } 
-       a{
-        display: flex;
-            h3{
-                font-family: $font-madre-rose;
-                text-transform: uppercase;
-                color: $noir;
-        }
-       }
-  }
-  
-  /* Définir le texte */
-  .text-wrapper > span {
-           text-transform: uppercase;
+    ul {
+              list-style: none;
+              padding: 0;
+              width: 100%;
+              list-style: none;
+              padding-top: 11vw;
+              width: 100%;
+              li {
+                  a {
+                   color: $white;
+                   font-family: $font-madre-rose;
+                   display: flex;
+                   text-align: center;
+                   font-size: 40px;
+                   padding: 10px;
+                   flex-direction: column;
+                      &:hover {
+                          background-color: #555;
+                      }
+                  
+                   }
+               }
+           }       
+   }
+   .loop{
+         
+       bottom: 0;
+   }
    
-    animation: move-rtl 6000ms linear infinite;
-  
-    color: transparent;
-    white-space: nowrap;
-    padding-top: 6rem;
-    letter-spacing: 1px;
-  }
-  
-  /* Animation du texte */
-  @keyframes move-rtl {
-    0% {
-      transform: translateX(0);
-    }
-  
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-// fin animation text
+     .sidebar .closebtn {  
+       padding: 8px 8px 8px 32px;
+       display: block;
+      
+      
+       position: absolute;
+       top: 0;
+       right: 25px;
+       font-size: 36px;
+       margin-left: 50px;
+     }
+   
+     .openbtn {
+       z-index: 100;
+       position: absolute;
+       font-size: 20px;
+       cursor: pointer;
+       
+       padding: 10px 15px;
+       border: none;
+         .openbtn img {
+   display: block;
+       
+     }  
+   
+     .menu-title {
+       display: none; /* Hide the h3 element */
+   }
+     }
+   
+   
+   
+   
+   
+   
+   
+   /*FIN MENU*/
+   /*INFORMATIONS*/
+   .info {
+       /* Set the background color of the `.info` section */
+       background-color: $beige;
+       width: 100%;
+     
+       /* Remove text decoration from all links within the `.info` section */
+       a {
+         text-decoration: none;
+       }
+     
+       /* Position the `.infor` div relative to its parent element */
+       .infor {
+         position: relative;
+         top: 86px; 
+         /* Set the font family to `$font-madre-rose` */
+         font-family: $font-madre-rose;
+     
+         /* Set the text alignment to center */
+         text-align: center;
+     
+         /* Style the `h1` elements within the `.infor` div */
+         h1 {
+           font-size: 40px;
+           text-transform: uppercase; 
+           line-height: 65px; 
+         }
+       }
+     
+       .exp {
+         padding-top: 20vh;
+     
+         /* Style the `h2` elements within the `.exp` div */
+         h2 {
+           text-transform: uppercase;
+           font-weight: 300; 
+           font-family: $font-made-outer-sans-light; 
+           text-align: left;
+         }
+     
+         p {
+           width: 50vw; 
+           font-family: $font-made-outer-sans-thin;
+           text-align: left;
+         }
+       }
+     }
+     
+     
+          
+      .dropdown {
+    
+   .dropdown-conte { 
+       display: none;
+       
+   }
+   }
+          
+   
+   .text-wrapper {
+       display: flex;
+       justify-content: flex-start;
+       overflow: hidden;
+       font-size: 20px;
+   }
+   
+   
+   
+   .loop-inscri {
+       position: relative;
+       top: 15vh;
+       display: flex;
+       align-items: center;
+   }
+   
+   .loop-effect1 a,
+   .loop-effect2 a {
+       font-family: $font-madre-rose;
+       text-transform: uppercase;
+       display: flex;
+   }
+   
+   .loop-effect1 a {
+       color: $white;
+   }
+   
+   .loop-effect2 a {
+       color: $noir;
+   }
+   
+   
+   /* Définir le texte */
+   .text-wrapper > span {
+       text-transform: uppercase;
+   
+       animation: move-rtl 6000ms linear infinite;
+   
+       white-space: nowrap;
+       padding-top: 6rem;
+       letter-spacing: 1px;
+   }
+   .loop-effect1 a:hover .text-wrapper > span {
+       animation-play-state: paused; /* Mettre en pause l'animation au survol */
+   }
+   /* Animation du texte */
+   @keyframes move-rtl {
+       0% {
+           transform: translateX(0);
+       }
+   
+       100% {
+           transform: translateX(-100%);
+       }
+   }
+   
+   // fin animation text
+   /*FIN INFORMATION */
 
 
 
